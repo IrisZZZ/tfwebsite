@@ -1,0 +1,29 @@
+.navbar-inverse {
+  background: #00796b;
+  border-bottom-color: #004d40;
+}
+.navbar-inverse .navbar-nav > li > a,
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav > .dropdown > a .caret {
+  color: #fff;
+}
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus,
+.navbar-nav > li > .dropdown-menu {
+  background: #4db6ac;
+}
+.nav-pills > li > a {
+  color: #303f9f;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: #eeeeee;
+}
+.itemList {
+  display: block;
+}
+i {
+  color: black !important;
+}
