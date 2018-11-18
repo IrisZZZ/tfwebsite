@@ -19,42 +19,42 @@ class TtSignUp extends Component {
             <div className="col-md-5 col-sm-10 login-form-2">
               <h3>Sign Up</h3>
               <div className="form-group">
-                <label for="ttSignId">Tutor ID</label>
+                <label for="ttSignId">ID NUMBER</label>
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Your Student Id"
+                  placeholder="Enter your ID here"
                   id="ttSignId"
                   value=""
                 />
               </div>
               <div className="form-group">
-                <label for="ttSignEmail">Email:</label>
+                <label for="ttSignEmail">SCHOOL EMAIL</label>
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Your Email Address"
+                  placeholder="Enter your school email here"
                   id="ttSignEmail"
                   value=""
                 />
               </div>
               <div className="form-group">
-                <label for="ttSignEmail">Email:</label>
+                <label for="ttSignPassword">PASSWORD</label>
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Your Email Address"
-                  id="ttSignEmail"
+                  placeholder="Enter your password here"
+                  id="ttSignPassword"
                   value=""
                 />
               </div>
               <div className="form-group">
-                <label for="ttSignEmail">Email:</label>
+                <label for="confirmationCode">CONFIRMATION CODE</label>
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Your Email Address"
-                  id="ttSignEmail"
+                  placeholder="Enter code here"
+                  id="confirmationCode"
                   value=""
                 />
               </div>
