@@ -6,24 +6,26 @@ class StdLogIn extends Component {
   render() {
     return (
       <div>
-        <div className="container login-container">
-          <nav className="navbar navbar-default tfnav">
-            {" "}
-            <button onClick={this.props.Finish}>Tutor Force</button>
-          </nav>
-          <div className="row">
-            <div className="col-md-2" />
-            <div className="col-md-4 col-sm-10 login-form-1 ">
-              <h3>Logo</h3>
-              <p>aaaaa</p>
-              <p>aaaaa</p>
-              <p>aaaaa</p>
-              <p>aaaaa</p>
+        <div className="row">
+          <div className="col-lg-6 col-md-6 col-sm-12 form-logo ">
+            <button className="button-logo-sign" onClick={this.props.Finish} />
+          </div>
+
+          <div className="col-lg-6 col-md-6 col-sm-12 form-sign ">
+            <h2>Great!</h2>
+            <h3>You are Sign In</h3>
+          </div>
+          <div className="col-lg-6 col-md-6 col-sm-12 schedule ">
+            <h2>Tutors Available</h2>
+            <div className="classes">
+              <h3>Roger Fleenor</h3>
+              <p>Room 101</p>
             </div>
-            <div className="col-md-4 col-sm-10 login-form-2">
-              <h3>Great You are Sign In</h3>
+
+            <div className="classes">
+              <h3>Iris Zheng</h3>
+              <p>Room 102</p>
             </div>
-            <div className="col-md-2" />
           </div>
         </div>
       </div>

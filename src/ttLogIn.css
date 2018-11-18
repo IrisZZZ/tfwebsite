@@ -1,11 +1,15 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Muli|Open+Sans);
 body {
   margin: 0;
+  padding: None;
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.6;
   color: #212529;
-  text-align: left;
-  background-color: white;
+  text-align: center;
+  background-image: url(./images/background.svg);
+  font-family: Roboto;
 }
 
 .navbar-laravel {
@@ -19,25 +23,100 @@ body {
   font-family: Raleway, sans-serif;
 }
 
-.my-form {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
 .my-form .row {
   margin-left: 0;
   margin-right: 0;
 }
 
 .login-form {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  width: 50%;
+  text-align: right;
+}
+.login-form1 {
+  text-align: center;
+  background-color: blue;
+  color: white;
+}
+.login-form2 {
+  text-align: center;
 }
 
 .login-form .row {
   margin-left: 0;
   margin-right: 0;
 }
-.tfnav {
-  height: 100px;
+
+.button-logo-sign {
+  background: None;
+  background-image: url(./images/logo.png);
+  height: 200px;
+  width: 220px;
+  background-size: cover;
+  border: none;
+}
+.form-sign {
+  text-align: center;
+  width: 50%;
+  height: 800px;
+  padding-top: 200px;
+  background-image: url("./images/animation.gif");
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.7);
+
+  opacity: 0;
+  animation-name: FadeIn;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  -webkit-animation-name: FadeIn;
+  -webkit-animation-duration: 3s;
+  -webkit-iteration-count: 1;
+}
+.form-sign h2 {
+  font-family: Lato;
+  font-size: 50px;
+  font-weight: bold;
+  font-style: normal;
+  color: #4a4a4a;
+}
+.form-sign h3 {
+  font-family: Muli;
+  font-size: 25px;
+  color: #4a4a4a;
+}
+.form-logo {
+  text-align: center;
+  width: 50%;
+  height: 800px;
+
+  padding-top: 150px;
+}
+
+@-webkit-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
