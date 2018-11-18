@@ -121,7 +121,7 @@ class Login extends Component {
     }
   }
   render() {
-    return this.checkRendering();
+    return <div>this.checkRendering();<Route exact path={`/home`} render={ (routerProps) => < Home routerProps={routerProps} setUpGame={this.setUpGame} />} /></div>
   }
 }
 
