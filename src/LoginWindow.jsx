@@ -6,38 +6,34 @@ import LinkToSupervisor from "./linkToSupervisor";
 import { Link } from "react-router-dom";
 
 class LoginWindow extends Component {
-  state = {
-    stdSignIn: false,
-    stdSignUp: false,
-    ttSignIn: false,
-    ttdSignUp: false
-  };
-
   render() {
     return (
       <div>
         <div className="container login-container">
           <nav className="navbar navbar-default tfnav">
-            Tutor Force
-            <Link to="/supervisors">supervisors</Link>
+            <button onClick={this.props.Finish}>Tutor Force</button>
+            {/* <Link onClick={this.props.supervisorLogin} to="/supervisors">
+              supervisors
+            </Link> */}
+            <button onClick={this.props.supervisorLogIn}>Supervisors</button>
           </nav>
           <LinkToSupervisor />
           <div className="row">
             <div className="col-md-5 col-sm-10 login-form-1 ">
-              <h3>Student Login</h3>
+              <h3>Student</h3>
 
               <div className="form-group">
-                <label for="stdId">Student ID</label>
+                <label for="stdId">ID NUMBER</label>
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Your Student Id"
-                  id="studentId"
+                  placeholder="Enter Your Student Id"
+                  id="stdId"
                   value=""
                 />
               </div>
               <div class="form-group">
-                <label for="stdMajor">Major</label>
+                <label for="stdMajor">MAJOR</label>
                 <select class="form-control" id="stdMajor">
                   <option>1</option>
                   <option>2</option>
@@ -45,7 +41,7 @@ class LoginWindow extends Component {
                 </select>
               </div>
               <div class="form-group">
-                <label for="stdClass">Class</label>
+                <label for="stdClass">CLASS</label>
                 <select class="form-control" id="stdClass">
                   <option>1</option>
                   <option>2</option>
@@ -53,7 +49,7 @@ class LoginWindow extends Component {
                 </select>
               </div>
               <div class="form-group">
-                <label for="stdReason">Reason</label>
+                <label for="stdReason">REASON FOR VISIT</label>
                 <select class="form-control" id="stdReason">
                   <option>1</option>
                   <option>2</option>
@@ -62,36 +58,72 @@ class LoginWindow extends Component {
               </div>
 
               <div className="form-group">
-                <button type="submit" class="btnSubmit" value="">
-                  Check in
+                <button
+                  onClick={this.props.updateSLState}
+                  type="submit"
+                  class="btnSubmit"
+                  value=""
+                >
+                  Check In
                 </button>
-                <button type="submit" className="btnSubmit" value="Login">
-                  Sign Up
-                </button>
+                <p>
+                  Don't have an account?
+                  <button
+                    onClick={this.props.updateSSUState}
+                    type="submit"
+                    className="btnSubmit btn-sm"
+                    value="Login"
+                  >
+                    Sign Up
+                  </button>
+                </p>
               </div>
               <div className="form-group" />
             </div>
             <div className="col-md-2" />
             <div className="col-md-5 col-sm-10 login-form-2">
-              <h3>Tutor Login</h3>
+              <h3>Tutor </h3>
               <div className="form-group">
-                <label for="tutorId">Tutor ID</label>
+                <label for="tutorId">ID NUMBER</label>
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Your Tutor Id"
+                  placeholder="Enter Your Tutor Id"
                   id="tutorId"
+                  value=""
+                />
+              </div>
+              <div className="form-group">
+                <label for="tutorPassword">PASSWORD</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Password"
+                  id="tutorPassword"
                   value=""
                 />
               </div>
 
               <div className="form-group">
-                <button type="submit" className="btnSubmit" value="Login">
+                <button
+                  onClick={this.props.updateTTLState}
+                  type="submit"
+                  className="btnSubmit"
+                  value="Login"
+                >
                   Clock In
                 </button>
-                <button type="submit" className="btnSubmit" value="Login">
-                  Sign Up
-                </button>
+                <p>
+                  Don't have an account?
+                  <button
+                    onClick={this.props.updateTTSUState}
+                    type="submit"
+                    className="btnSubmit btn-sm"
+                    value="Login"
+                  >
+                    Sign Up
+                  </button>
+                </p>
               </div>
             </div>
           </div>

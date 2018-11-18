@@ -7,7 +7,10 @@ class StdSignUp extends Component {
     return (
       <div>
         <div className="container login-container">
-          <nav className="navbar navbar-default tfnav"> Tutor Force</nav>
+          <nav className="navbar navbar-default tfnav">
+            {" "}
+            <button onClick={this.props.Finish}>Tutor Force</button>
+          </nav>
           <div className="row">
             <div className="col-md-5 col-sm-10 login-form-1 ">
               <h3>Logo</h3>
@@ -16,33 +19,26 @@ class StdSignUp extends Component {
             <div className="col-md-5 col-sm-10 login-form-2">
               <h3>Sign Up</h3>
               <div className="form-group">
-                <label for="stdSignId">Stident ID</label>
+                <label for="stdSignId">ID NUMBER</label>
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Your Student Id"
+                  placeholder="Enter your ID here"
                   id="stdSignId"
                   value=""
                 />
               </div>
               <div className="form-group">
-                <label for="stdSignEmail">Email:</label>
+                <label for="stdSignEmail">SCHOOL EMAIL</label>
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Your Email Address"
+                  placeholder="Enter your school email here"
                   id="stdSignEmail"
                   value=""
                 />
               </div>
-              <div class="form-group">
-                <label for="stdSignSubject">Subject</label>
-                <select class="form-control" id="stdSignSubject">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                </select>
-              </div>
+
               <div class="form-group">
                 <label for="stdSignInMajor">Major</label>
                 <select class="form-control" id="stdSignInMajor">
@@ -61,7 +57,11 @@ class StdSignUp extends Component {
               </div>
 
               <div className="form-group">
-                <button type="submit" className="btnSubmit">
+                <button
+                  onClick={this.props.SubmitStdSignUp}
+                  type="submit"
+                  className="btnSubmit"
+                >
                   Sign Up
                 </button>
               </div>

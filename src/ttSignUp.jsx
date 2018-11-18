@@ -7,7 +7,10 @@ class TtSignUp extends Component {
     return (
       <div>
         <div className="container login-container">
-          <nav className="navbar navbar-default tfnav"> Tutor Force</nav>
+          <nav className="navbar navbar-default tfnav">
+            {" "}
+            <button onClick={this.props.Finish}>Tutor Force</button>
+          </nav>
           <div className="row">
             <div className="col-md-5 col-sm-10 login-form-1 ">
               <h3>Logo</h3>
@@ -35,25 +38,33 @@ class TtSignUp extends Component {
                   value=""
                 />
               </div>
-              <div class="form-group">
-                <label for="stdSignSubject">Subject</label>
-                <select class="form-control" id="stdSignSubject">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                </select>
+              <div className="form-group">
+                <label for="ttSignEmail">Email:</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Your Email Address"
+                  id="ttSignEmail"
+                  value=""
+                />
               </div>
-              <div class="form-group">
-                <label for="stdSignInMajor">Major</label>
-                <select class="form-control" id="stdSignInMajor">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                </select>
+              <div className="form-group">
+                <label for="ttSignEmail">Email:</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Your Email Address"
+                  id="ttSignEmail"
+                  value=""
+                />
               </div>
 
               <div className="form-group">
-                <button type="submit" className="btnSubmit">
+                <button
+                  onClick={this.props.SubmitTtSignUp}
+                  type="submit"
+                  className="btnSubmit"
+                >
                   Sign Up
                 </button>
               </div>

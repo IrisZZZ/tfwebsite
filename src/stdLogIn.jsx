@@ -7,7 +7,10 @@ class StdLogIn extends Component {
     return (
       <div>
         <div className="container login-container">
-          <nav className="navbar navbar-default tfnav"> Tutor Force</nav>
+          <nav className="navbar navbar-default tfnav">
+            {" "}
+            <button onClick={this.props.Finish}>Tutor Force</button>
+          </nav>
           <div className="row">
             <div className="col-md-2" />
             <div className="col-md-4 col-sm-10 login-form-1 ">
