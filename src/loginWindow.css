@@ -94,7 +94,7 @@ body {
   font-family: Muli;
 }
 .margin-bottom-large {
-  margin-bottom: 193px;
+  margin-bottom: 120px;
 }
 .logo-button {
   background: url(./images/logo.svg);
@@ -117,6 +117,10 @@ body {
   width: 100%;
   font-family: Muli;
   font-size: 12px;
-  padding-top: 15px;
+  padding-top: 1px;
   margin-bottom: 30px;
+}
+#clock-in {
+  position: relative;
+  top: -12px;
 }

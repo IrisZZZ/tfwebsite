@@ -13,6 +13,9 @@
 .navbar-nav > li > .dropdown-menu {
   background: #4db6ac;
 }
+.bg-blue {
+  background-color: #5cb5e6;
+}
 .nav-pills > li > a {
   color: #303f9f;
 }
@@ -24,12 +27,18 @@
 .itemList {
   display: block;
 }
-i {
-  color: black !important;
-}
+
 a {
+  font-family: Muli;
+  font-size: 20px;
+  font-weight: bold;
   color: black;
-  font-size: 15px;
   display: block;
   height: 60px;
+}
+#font-setting {
+  font-family: Muli;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
 }

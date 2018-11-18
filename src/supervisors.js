@@ -9,23 +9,28 @@ class Supervisers extends Component {
     return (
       <div>
         <div col-lg-12 col-md-12 col-sm-12 col-xs-12>
-          <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+          <nav class="navbar navbar-expand-md navbar-dark bg-blue">
             <div class="navbar-collapse collapse w-100 order-1 order-md-2 dual-collapse2" />
             <div class="mx-auto order-0">
-              <a class="navbar-brand mx-auto" href="#">
+              {/* <a class="navbar-brand mx-auto" href="#">
                 Dashboard
-              </a>
+              </a> */}
             </div>
             <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <a class="nav-link " id="font-setting" href="#">
                     Admin
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">
-                    <button onClick={this.props.Finish}>Log out</button>
+                    <button
+                      className="remove-border btn-link"
+                      onClick={this.props.Finish}
+                    >
+                      Log out
+                    </button>
                   </a>
                 </li>
               </ul>

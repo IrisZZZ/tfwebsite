@@ -33,7 +33,7 @@ class LoginWindow extends Component {
                   <input
                     type="text"
                     className="form-control one-border input-border"
-                    placeholder="Enter Your Student Id"
+                    placeholder=""
                     id="stdId"
                     value=""
                   />
@@ -92,7 +92,7 @@ class LoginWindow extends Component {
                   <input
                     type="text"
                     className="form-control one-border input-border"
-                    placeholder="Enter Your Tutor Id"
+                    placeholder=""
                     id="tutorId"
                     value=""
                   />
@@ -104,7 +104,7 @@ class LoginWindow extends Component {
                   <input
                     type="text"
                     className="form-control one-border input-border margin-bottom-large"
-                    placeholder="Password"
+                    placeholder=""
                     id="tutorPassword"
                     value=""
                   />
@@ -116,6 +116,7 @@ class LoginWindow extends Component {
                     type="submit"
                     className="btnSubmit btn-styled margin-top"
                     value="Login"
+                    id="clock-in"
                   >
                     Clock In
                   </button>

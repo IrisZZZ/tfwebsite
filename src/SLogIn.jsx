@@ -8,17 +8,19 @@ class SLogIn extends Component {
       <div>
         <div className="container login-container">
           <nav className="navbar navbar-default tfnav">
-            <button onClick={this.props.Finish}>Tutor Force</button>
+            <button className="logo-button" onClick={this.props.Finish} />
           </nav>
           <div className="row">
             <div className="col-lg-4 col-md-3" />
-            <div className="col-lg-4  col-md-6 login-form-1">
-              <h3>Tutor</h3>
+            <div className="col-lg-4  col-md-6 login-form-1 bk-box">
+              <h3 className="margin-d-2">Supervisor</h3>
               <div className="form-group">
-                <label for="superId">SUPERVISOR ID</label>
+                <label className="label-styled" for="superId ">
+                  SUPERVISOR ID
+                </label>
                 <input
                   type="text"
-                  className="form-control"
+                  className="form-control one-border input-border"
                   placeholder=""
                   id="superId"
                   value=""
@@ -28,7 +30,7 @@ class SLogIn extends Component {
                 <label for="superPassword">PASSWORD</label>
                 <input
                   type="text"
-                  className="form-control"
+                  className="form-control one-border input-border"
                   placeholder=""
                   id="superPassword"
                   value=""
@@ -37,7 +39,7 @@ class SLogIn extends Component {
               <button
                 onClick={this.props.checkSuper}
                 type="submit"
-                class="btnSubmit"
+                class="btnSubmit btn-styled"
                 value=""
               >
                 Sign Up
