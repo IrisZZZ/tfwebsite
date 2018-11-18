@@ -3,6 +3,8 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./supervisors.css";
 import NavLinks from "./dashboard/navLinks";
 import { Link } from "react-router-dom";
+import "./supervisorTiles.css";
+import Plot from 'react-plotly.js';
 
 class Supervisers extends Component {
   render() {
@@ -90,6 +92,71 @@ class Supervisers extends Component {
                 <span class="fa fa-dashboard" /> <NavLinks />
               </strong>
             </a>
+
+            <link rel="stylesheet" type="text/css" href="supervisorTiles.css"></link>
+            <main>
+            <section id="block1">
+              <div class="innersection">
+              <Plot
+                data={[
+
+                  {type: 'bar', x: [8, 9, 10, 11, 12, 13], y: [11, 14, 32, 36, 74, 66]},
+                ]}
+                layout={ {width: 320, height: 240, title: 'Students Traffic Yesterday'} }
+              />
+              </div>
+            </section>
+
+            <section id="block2">
+              <div class="innersection">
+              <Plot
+                data={[
+                  {
+                    x: [1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000],
+                    y: [1000, 2000, 3000, 4000, 5000, 6000, 9000, 2000],
+                    type: 'scatter',
+                    mode: 'lines+points',
+                    marker: {color: '#1A2045'},
+                  },
+                ]}
+                layout={ {width: 320, height: 240, title: 'Frequency of Project help'} }
+              />
+              </div>
+            </section>
+
+              <section id="block3">
+                <div class="innersection">
+
+                <Plot
+                  data={[
+
+                    {type: 'bar', x: [8, 9, 10, 11, 12, 13], y: [3, 2, 14, 17, 31, 20]},
+                  ]}
+                  layout={ {width: 320, height: 240, title: 'Student Traffic Today'} }
+                />
+
+                </div>
+              </section>
+
+
+              <section id="block4">
+
+                <div class="innersection">
+
+                <Plot
+                  data={[
+
+                    {type: 'bar', x: ["CSC", "SE", "C", "captureStackTrace", "CE", "ME"], y: [100, 20, 30, 34, 31, 19]},
+                  ]}
+                  layout={ {width: 320, height: 240, title: 'Popular Majors'} }
+                />
+
+                </div>
+
+              </section>
+
+            </main>
+
           </div>
         </div>
       </div>

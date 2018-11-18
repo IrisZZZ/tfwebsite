@@ -23,7 +23,7 @@ class SLogIn extends Component {
                   className="form-control one-border input-border"
                   placeholder=""
                   id="superId"
-                  value=""
+                  value="876543456"
                 />
               </div>
               <div className="form-group">
@@ -33,7 +33,7 @@ class SLogIn extends Component {
                   className="form-control one-border input-border"
                   placeholder=""
                   id="superPassword"
-                  value=""
+                  value="******************"
                 />
               </div>
               <button
@@ -42,7 +42,7 @@ class SLogIn extends Component {
                 class="btnSubmit btn-styled"
                 value=""
               >
-                Sign Up
+                Sign In
               </button>
             </div>
             <div className="col-lg-4 col-md-3" />

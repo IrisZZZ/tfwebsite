@@ -9,7 +9,7 @@ import StdSignUp from "./stdSignUp";
 import TtSignUp from "./ttSignUp";
 import TtLogIn from "./ttLogIn";
 import TtSignUpSuccess from "./ttSignUpSuccess";
-import SLogIn from "./SLogIn";
+import SLogIn from "./sLogIn";
 import Supervisors from "./supervisors";
 class Login extends Component {
   state = {

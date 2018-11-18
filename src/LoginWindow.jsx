@@ -35,7 +35,7 @@ class LoginWindow extends Component {
                     className="form-control one-border input-border"
                     placeholder=""
                     id="stdId"
-                    value=""
+                    value="2345678876"
                   />
                 </div>
                 <div class="form-group">
@@ -43,9 +43,9 @@ class LoginWindow extends Component {
                     MAJOR
                   </label>
                   <select class="form-control one-border" id="stdMajor">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
+                    <option>CSC</option>
+                    <option>CpE</option>
+                    <option>ME</option>
                   </select>
                 </div>
                 <div class="form-group">
@@ -53,9 +53,9 @@ class LoginWindow extends Component {
                     CLASS
                   </label>
                   <select class="form-control one-border" id="stdClass">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
+                    <option>CSC 131</option>
+                    <option>CSC 170</option>
+                    <option>CSC 174</option>
                   </select>
                 </div>
                 <div class="form-group">
@@ -63,9 +63,9 @@ class LoginWindow extends Component {
                     REASON FOR VISIT
                   </label>
                   <select class="form-control one-border" id="stdReason">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
+                    <option>Project</option>
+                    <option>Assignment</option>
+                    <option>Study for Exam</option>
                   </select>
                 </div>
 
@@ -94,7 +94,7 @@ class LoginWindow extends Component {
                     className="form-control one-border input-border"
                     placeholder=""
                     id="tutorId"
-                    value=""
+                    value="87654324567"
                   />
                 </div>
                 <div className="form-group">
@@ -106,7 +106,7 @@ class LoginWindow extends Component {
                     className="form-control one-border input-border margin-bottom-large"
                     placeholder=""
                     id="tutorPassword"
-                    value=""
+                    value="*********"
                   />
                 </div>
 
