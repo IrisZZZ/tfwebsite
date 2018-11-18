@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./supervisors.css";
+import NavLinks from "./dashboard/navLinks";
+import { Link } from "react-router-dom";
 
 class Supervisers extends Component {
   render() {
@@ -23,7 +25,7 @@ class Supervisers extends Component {
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">
-                    Log out
+                    <button onClick={this.props.Finish}>Log out</button>
                   </a>
                 </li>
               </ul>
@@ -35,44 +37,44 @@ class Supervisers extends Component {
             <ul>
               <li class="nav-header" />
               <li className="itemList">
-                <a href="#">
+                <Link to="/profile">
                   <i class="fa fa-dashboard" /> Profile
-                </a>
+                </Link>
               </li>
               <li className="itemList">
-                <a href="#">
+                <Link to="/dashboard">
                   <i class="fa fa-tags" /> Dashboard
-                </a>
+                </Link>
               </li>
               <li className="itemList">
-                <a href="#">
+                <Link to="/reports">
                   <i class="fa fa-history" /> Reports
-                </a>
+                </Link>
               </li>
               <li className="itemList">
-                <a href="#">
+                <Link to="/classes">
                   <i class="fa fa-lock" /> Classes
-                </a>
+                </Link>
               </li>
               <li className="itemList">
-                <a href="#">
+                <Link to="/people">
                   <i class="fa fa-lock" /> People
-                </a>
+                </Link>
               </li>
               <li className="itemList">
-                <a href="#">
+                <Link to="/payroll">
                   <i class="fa fa-lock" /> Payroll
-                </a>
+                </Link>
               </li>
               <li className="itemList">
-                <a href="#">
+                <Link to="/calendar">
                   <i class="fa fa-lock" /> Calender
-                </a>
+                </Link>
               </li>
               <li className="itemList">
-                <a href="#">
-                  <i class="fa fa-lock" /> inbox
-                </a>
+                <Link to="/inbox">
+                  <i class="fa fa-lock" /> Inbox
+                </Link>
               </li>
             </ul>
           </div>
@@ -80,7 +82,7 @@ class Supervisers extends Component {
           <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
             <a href="#">
               <strong>
-                <span class="fa fa-dashboard" /> My Daaa
+                <span class="fa fa-dashboard" /> <NavLinks />
               </strong>
             </a>
           </div>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
-// import "ttSignUpSuccess.css";
+import "./ttSignUpSuccess.css";
 
 class TtSignUp extends Component {
   render() {

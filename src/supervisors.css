@@ -27,3 +27,9 @@
 i {
   color: black !important;
 }
+a {
+  color: black;
+  font-size: 15px;
+  display: block;
+  height: 60px;
+}

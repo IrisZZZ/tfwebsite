@@ -9,6 +9,7 @@ import StdSignUp from "./stdSignUp";
 import TtSignUp from "./ttSignUp";
 import TtLogIn from "./ttLogIn";
 import TtSignUpSuccess from "./ttSignUpSuccess";
+import SLogIn from "./SLogIn";
 import Supervisors from "./supervisors";
 class Login extends Component {
   state = {
@@ -19,7 +20,8 @@ class Login extends Component {
     supervisor: false,
     submitStdSignUp: false,
     submitTtSignUp: false,
-    supervisor: false
+    supervisor: false,
+    superCheck: false
   };
 
   updateSLState = () => {
@@ -39,7 +41,6 @@ class Login extends Component {
   };
   updateSubmitTtSignUp = () => {
     this.setState({ submitTtSignUp: true });
-    console.log("aaaaa");
   };
   finishSignUp = () => {
     this.setState({ stdLogin: false });
@@ -48,13 +49,22 @@ class Login extends Component {
     this.setState({ ttSignUp: false });
     this.setState({ submitStdSignUp: false });
     this.setState({ submitTtSignUp: false });
+    this.setState({ supervisor: false });
   };
   supervisorLogIn = () => {
     this.setState({ supervisor: true });
   };
+  checkSuper = () => {
+    this.setState({ superCheck: true });
+  };
 
   checkRendering() {
-    if (this.state.supervisor == true) {
+    if (this.state.supervisor == true && this.state.superCheck == false) {
+      const Screen = (
+        <SLogIn Finish={this.finishSignUp} checkSuper={this.checkSuper} />
+      );
+      return Screen;
+    } else if (this.state.supervisor == true && this.state.superCheck == true) {
       const Screen = <Supervisors Finish={this.finishSignUp} />;
       return Screen;
     } else if (this.state.stdLogin == true) {
